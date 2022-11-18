@@ -3,8 +3,8 @@ package shape;
 import base.IShape;
 
 public class Square implements IShape {
-    String Name;
-    int height, width;
+    private String Name;
+    private int height, width;
 
     public Square(String name, int height, int width) {
         Name = name;
@@ -35,7 +35,7 @@ public class Square implements IShape {
     public void setWidth(int width) {
         this.width = width;
     }
-
+    @Override
     public double calculateArea() {
         return (double) (getHeight() * getWidth());
     }
